@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMG Industries | Turnkey Plant Solutions | Processing & Packaging</title>
+    <meta name="description"
+        content="KMG Industries specializes in turnkey plant solutions, industrial automation, and professional consulting for Food, Pharma, and Packaging industries worldwide.">
+    <meta name="keywords"
+        content="Industrial Consultant, Processing Solutions, Packaging Industry, Food Processing, Pharma Packaging, KMG Industries, Turning Projects, Manufacturing Automation">
+    <link rel="canonical" href="https://kmgindustries.in/index.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="KMG Industries | Industrial Excellence">
+    <meta property="og:description"
+        content="Leading global provider of turnkey plant solutions and industrial consulting.">
+    <meta property="og:image" content="assets/logo.jpg">
+    <meta property="og:url" content="https://kmgindustries.in">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Top Visitor Banner -->
+    <div class="top-banner" id="visitor-banner">
+        <div class="banner-content container">
+            <div class="banner-text">
+                <i class="fa-solid fa-eye mr-2" style="color: var(--color-accent); font-size: 1.1rem;"></i>
+                <span style="opacity: 0.9;">Website Views: </span>
+                <span id="visitor-count" class="countdown-timer" style="margin: 0 8px; font-size: 1rem;">-----</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visitor Count Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Base Date for our count accumulation logic
+            const baseDate = new Date('2026-03-01T00:00:00').getTime();
+            const now = new Date().getTime();
+
+            // Calculate total days passed
+            const daysPassed = Math.floor((now - baseDate) / (1000 * 60 * 60 * 24));
+
+            // Starting believable visitor base + incrementing 2 per day automatically
+            let baseCount = 18456;
+            let targetCount = baseCount + (Math.max(0, daysPassed) * 2);
+
+            // Small subtle randomness
+            const hourOffset = new Date().getHours() % 4;
+            targetCount += hourOffset;
+
+            const counterElement = document.getElementById('visitor-count');
+            let currentCount = 0; // Starting from 0 as requested
+
+            const formatNumber = (num) => new Intl.NumberFormat('en-IN').format(num);
+
+            function animate() {
+                // Phase 1: Intro (0 to 100) - Show steps of 5
+                if (currentCount < 100) {
+                    currentCount += 5;
+                    counterElement.innerText = formatNumber(currentCount);
+                    setTimeout(animate, 60);
+                }
+                // Phase 2: Rapid Acceleration (to near target)
+                else if (currentCount < targetCount - 60) {
+                    const jump = Math.ceil((targetCount - currentCount) / 12);
+                    currentCount += jump;
+                    counterElement.innerText = formatNumber(currentCount);
+                    setTimeout(animate, 25);
+                }
+                // Phase 3: Outro (Slow down at the end)
+                else if (currentCount < targetCount) {
+                    currentCount += 1;
+                    counterElement.innerText = formatNumber(currentCount);
+
+                    const remaining = targetCount - currentCount;
+                    // Progressive delay for that "slow down" feel
+                    const delay = 180 - (remaining * 2);
+                    setTimeout(animate, Math.max(100, delay));
+                }
+                else {
+                    counterElement.innerText = formatNumber(targetCount);
+                }
+            }
+
+            animate();
+        });
+    </script>
+
+    <div id="header-root"></div>
+
+    <!-- Hero Section: Consultant-First Rebrand -->
+    <section id="home" class="hero">
+        <div class="hero-slider-container">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('assets/slider1.png');"></div>
+                <div class="hero-slide" style="background-image: url('assets/slider2.png');"></div>
+                <div class="hero-slide" style="background-image: url('assets/slider3.png');"></div>
+            </div>
+
+            <div class="hero-slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+
+            <div class="hero-slider-arrows">
+                <div class="slider-arrow prev-slide"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="slider-arrow next-slide"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Industrial Excellence - Turnkey Solutions</div>
+                <h2 class="hero-title">Turnkey Solutions in Processing & Packaging</h2>
+                <h3 class="hero-subtitle-small d-block mb-3 text-white fw-medium"
+                    style="font-size: clamp(1rem, 4vw, 1.4rem); white-space: normal !important;">Machineries - Projects
+                    - Contract Manufacturing</h3>
+                <p class="hero-subtitle">Specialized consulting for Processing & Packaging industries. We help
+                    factory
+                    owners move past daily chaos toward a business that grows on its own.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary cta-trigger">Connect with our Engineers <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Impact Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">350+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Products Packaged</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">250+</span>
+                    <span class="stat-label">Pattern Machineries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Who We Are / Expertise Section -->
+    <section class="section">
+        <div class="container">
+            <div class="full-row-content" style="width: 100%;">
+                <h4 class="section-title">Managing Director</h4>
+                <p class="section-description" style="max-width: 100%; width: 100%;">Dhyan Shah is the Founder and
+                    Managing Director of KMG
+                    Industries, a leading engineering and consulting firm based in Ahmedabad, Gujarat. Under his
+                    leadership since 2008, the company has grown into a global provider of turnkey plant solutions
+                    and industrial consulting.</p>
+                <p class="section-description mt-3" style="max-width: 100%; width: 100%;"><strong>Professional Roles &
+                        Expertise</strong><br>
+                    Dhyan Shah operates multiple business entities and roles within the industrial sector:
+                </p>
+
+                <div class="expertise-grid mt-4">
+                    <div class="expertise-item">
+                        <i class="fa-solid fa-user-tie text-primary"></i>
+                        <div>
+                            <h4>Industrial Consultant</h4>
+                            <p>He provides expert consulting for the food and pharmaceutical industries,
+                                specializing in production planning, control, and process optimization.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <i class="fa-solid fa-building text-primary"></i>
+                        <div>
+                            <h4>Founder of KMG Industries</h4>
+                            <p>He established KMG Industries, which offers
+                                complete, sustainable, and high-output industrial solutions for startups and large
+                                corporates alike.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <i class="fa-solid fa-pills text-primary"></i>
+                        <div>
+                            <h4>Lead at KMG Pharma</h4>
+                            <p>He is also associated with KMG Pharma and Packaging Industries, which deals in
+                                organic spices, chocolates, and automatic packaging plants.</p>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn-outline mt-4">For More Info..</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- KMG Industries Overview -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title mt-2">KMG Industries Overview</h2>
+                <p class="section-description text-center max-w-800 mx-auto">KMG
+                    Industries provides end-to-end technology solutions across various sectors.</p>
+            </div>
+
+            <div class="grid-auto-fit-250">
+                <div class="service-card shadow-sm hover-lift text-center card-padded-white">
+                    <i class="fa-solid fa-gears fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Core Services</h3>
+                    <p class="text-0-95"">Turnkey plant solutions, machinery
+                        installation, industrial automation (Industry 4.0), and SOP development.</p>
+                </div>
+
+                <div class=" service-card shadow-sm hover-lift text-center card-padded-white">
+                        <i class="fa-solid fa-industry fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Industries Served</h3>
+                    <p class="text-0-95"">Food processing (spices, dairy,
+                        snacks), agriculture, chemicals, pharmaceuticals, and cosmetics.</p>
+                </div>
+
+                <div class=" service-card shadow-sm hover-lift text-center card-padded-white">
+                        <i class="fa-solid fa-earth-americas fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Global Reach</h3>
+                    <p class="text-0-95"">The company maintains a presence in
+                        over 30 countries, with international offices in Canada, the US, and Australia.</p>
+                </div>
+
+                <div class=" service-card shadow-sm hover-lift text-center card-padded-white">
+                        <i class="fa-solid fa-building-circle-check fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">New Developments</h3>
+                    <p class="text-0-95"">As of April 2025, the company opened a
+                        new corporate office in Ahmedabad specifically for its supply chain division.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Machinery Portfolio -->
+    <section class=" section" id="machinery-portfolio">
+                    <div class="container">
+                        <div class="section-header text-center">
+                            <h2 class="section-title mt-2">Industrial Machinery Portfolio</h2>
+                            <p class="section-description text-center max-w-800 mx-auto">The company
+                                manufactures and installs a wide variety of high-performance equipment.</p>
+                        </div>
+
+                        <div class="grid-3" style="gap: 20px;">
+                            <div class="service-card shadow-sm hover-lift text-center border-light">
+                                <i class="fa-solid fa-utensils text-primary fa-3x mb-3"></i>
+                                <h4>Food Processing</h4>
+                                <p class=" text-0-95">Includes spice grinding machines
+                                    (pulverizers), meat mixers, bone saws, marinators, and rotary roasters for puffed
+                                    rice.</p>
+                            </div>
+                            <div class="service-card shadow-sm hover-lift text-center border-light">
+                                <i class="fa-solid fa-capsules text-primary fa-3x mb-3"></i>
+                                <h4>Pharmaceutical & Cosmetic</h4>
+                                <p class=" text-0-95">Specialized units for syrup, vial, and
+                                    tablet/blister packaging, as well as chemical and stirred reactors.</p>
+                            </div>
+                            <div class="service-card shadow-sm hover-lift text-center border-light">
+                                <i class="fa-solid fa-bottle-droplet text-primary fa-3x mb-3"></i>
+                                <h4>Filling & Capping</h4>
+                                <p class=" text-0-95">High-precision liquid and powder filling
+                                    machines, automatic capping, and high-speed labeling systems.</p>
+                            </div>
+                            <div class="service-card shadow-sm hover-lift text-center border-light">
+                                <i class="fa-solid fa-box-open text-primary fa-3x mb-3"></i>
+                                <h4>Packaging Solutions</h4>
+                                <p class=" text-0-95">Advanced equipment like continuous induction
+                                    sealers, automatic packing machines, and shrink tunnels.</p>
+                            </div>
+                            <div class="service-card shadow-sm hover-lift text-center border-light">
+                                <i class="fa-solid fa-blender text-primary fa-3x mb-3"></i>
+                                <h4>Milling & Mixing</h4>
+                                <p class=" text-0-95">Hammer mills, pin mills, and cryogenic
+                                    grinders for high-fat spices, alongside ribbon blenders and mass mixers.</p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <!-- Turnkey Plant Solutions -->
+    <section class="section bg-light" id="turnkey-solutions">
+        <div class="container">
+            <div class="split-layout align-center">
+                <div class="content-column">
+                    <span class="section-tag">END-TO-END</span>
+                    <h2 class="section-title">Turnkey Plant Solutions</h2>
+                    <p class="section-description">KMG Industries offers end-to-end "concept-to-commissioning"
+                        services for setting up complete manufacturing lines.</p>
+
+                    <div class="mt-4">
+                        <div class="expertise-item mb-4" style="display: flex; gap: 15px;">
+                            <i class="fa-solid fa-industry text-primary fa-2x mt-1"></i>
+                            <div>
+                                <h4>Industries</h4>
+                                <p class="">Specialized setups for spices processing (e.g., 3-stage
+                                    chilli), honey processing, dairy, beverages, and snacks.</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item" style="display: flex; gap: 15px;">
+                            <i class="fa-solid fa-microchip text-primary fa-2x mt-1"></i>
+                            <div>
+                                <h4>Automation</h4>
+                                <p class="">Integration of Industry 4.0 solutions, PLC/HMI controls, and
+                                    robotic systems to ensure "one-touch" hygienic production.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-column">
+                    <div class="glass-card text-center shadow-lg turnkey-banner">
+                        <i class="fa-solid fa-gears fa-4x mb-4 text-white"></i>
+                        <h3 class="text-white">Concept to Commissioning</h3>
+                        <p class="text-white">We build complete factories from zero to full
+                            operational
+                            output, handling everything from layout to machinery installation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting & Technical Services -->
+    <section class="section" id="consulting-services">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title mt-2">Consulting & Technical Services</h2>
+                <p class="section-description text-center max-w-800 mx-auto">Under KMG Industries,
+                    Dhyan Shah provides strategic and operational guidance.</p>
+            </div>
+
+            <div class="grid-auto-fit-250">
+                <div class="service-card shadow-sm hover-lift text-center card-padded-border">
+                    <i class="fa-solid fa-laptop-file fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Project Advisory</h3>
+                    <p class="text-0-95">Feasibility studies, plant layout
+                        design, and assistance with government subsidies (MOFPI) for food projects.</p>
+                </div>
+
+                <div class="service-card shadow-sm hover-lift text-center card-padded-border">
+                    <i class="fa-solid fa-chart-line fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Operational Excellence</h3>
+                    <p class="text-0-95">Efficiency audits to reduce waste, SOP
+                        development, and implementation of systems to "decentralize authority" in manufacturing plants.
+                    </p>
+                </div>
+
+                <div class="service-card shadow-sm hover-lift text-center card-padded-border">
+                    <i class="fa-solid fa-leaf fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Post-Harvest Consulting</h3>
+                    <p class="text-0-95">Expertise in infrastructure for
+                        fruits, vegetables, cereals, and marine processing.</p>
+                </div>
+
+                <div class="service-card shadow-sm hover-lift text-center card-padded-border">
+                    <i class="fa-solid fa-headset fa-3x text-primary mb-3"></i>
+                    <h3 class="text-1-25">Maintenance & Support</h3>
+                    <p class="text-0-95">Comprehensive Annual Maintenance
+                        Contracts (AMC) and 24/7 remote technical support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Industries We Can Cover -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Industries We Can Cover</h2>
+                <p class="section-description">Serving a wide spectrum of industries with tailored processing and
+                    packaging solutions from our Ahmedabad facility.</p>
+            </div>
+
+            <div class="grid-3 mt-5" style="gap: 1.5rem;">
+                <!-- 1 Foods -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_food.png" alt="Foods Industry"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-utensils"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Foods</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 Spices & Lentils -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_spices.png" alt="Spices & Lentils"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-pepper-hot"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Spices & Lentils</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 Pharmaceutical -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_pharma.png" alt="Pharmaceutical"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-pills"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Pharmaceutical</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 API -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_api.png" alt="API Industry"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-flask"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 Pesticide -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_indsutry_pesticide.png" alt="Pesticide Industry"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-spray-can-sparkles"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Pesticide</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 Agriculture -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_indsutry_agro.png" alt="Agriculture"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-tractor"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Agriculture</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 Cosmetic -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industryr_cosmatic.png" alt="Cosmetic Industry"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-spa"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Cosmetic</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 Chemical -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_chemical.png" alt="Chemical Industry"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-atom"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Chemical</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 Instant Mix & Ready to Eat -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_ready_to_Eat.png" alt="Instant Mix & Ready to Eat"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-bowl-rice"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Instant Mix & Ready to
+                                Eat</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 Detergent Powder -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_detirgent.png" alt="Detergent Powder"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-soap"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Detergent Powder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11 Chocolate -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_chocolate.png" alt="Chocolate Industry"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-candy-bar"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Chocolate</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12 Export Industries -->
+                <div class="hover-lift"
+                    style="position:relative; border-radius:14px; overflow:hidden; height:220px; cursor:default;">
+                    <img src="assets/home_industry_export.png" alt="Export Industries"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <div
+                        style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.78) 40%, rgba(0,0,0,0.15)); display:flex; align-items:flex-end; padding:1.25rem;">
+                        <div>
+                            <i class="fa-solid fa-earth-americas"
+                                style="color:var(--color-accent); font-size:1.1rem; margin-bottom:0.4rem; display:block;"></i>
+                            <span style="color:white; font-size:1.05rem; font-weight:700;">Export Industries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Presence Section -->
+    <section class="section" id="global-presence">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title mt-2">Global Presence</h2>
+                <p class="section-description text-center max-w-800 mx-auto">Providing industrial excellence across
+                    international borders with 350+ successful projects worldwide.</p>
+            </div>
+            <div class="global-map-wrapper mt-5">
+                <img src="assets/global_presence.png" alt="Global Presence - KMG Industries"
+                    class="shadow-lg rounded-img mx-auto"
+                    style="max-width: 100%; height: auto; display: block; background: white; padding: 10px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News / Updates Slider -->
+    <section class="section bg-light" id="latest-news">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Updates</span>
+                <h2 class="section-title mt-2">Latest News & Projects</h2>
+                <p class="section-description text-center max-w-800 mx-auto">Recent milestones, successful
+                    installations, and new facility developments.</p>
+            </div>
+
+            <div class="swiper news-swiper mt-4 pb-5">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide news-slide">
+                        <div class="news-icon-wrapper"><i class="fa-solid fa-box-open"></i></div>
+                        <div class="news-content">
+                            <p>Contract Manufacturing & Packaging Plant for spices in Kathwada</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide news-slide">
+                        <div class="news-icon-wrapper"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="news-content">
+                            <p>Honey Processing Plant Setup in Rajkot</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide news-slide">
+                        <div class="news-icon-wrapper"><i class="fa-solid fa-flask"></i></div>
+                        <div class="news-content">
+                            <p>Complete API Plant installation in Vadodara</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide news-slide">
+                        <div class="news-icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="news-content">
+                            <p>High speed cartage filling machine SA-CA-2026 model launch</p>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide news-slide">
+                        <div class="news-icon-wrapper"><i class="fa-solid fa-pepper-hot"></i></div>
+                        <div class="news-content">
+                            <p>1000 kg/hr Chilli Powder Grinding Plant setup in Mexico</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> <!-- Closing container now -->
+    </section>
+
+    <div id="footer-root"></div>
+    <div id="popup-root"></div>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var newsSwiper = new Swiper('.news-swiper', {
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1, spaceBetween: 20 },
+                    768: { slidesPerView: 2, spaceBetween: 30 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

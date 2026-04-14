@@ -1,0 +1,46 @@
+<div id="bada-style-popup" class="modal-overlay" style="display: none;">
+    <div class="modal-content glass-morphism">
+        <button class="modal-close" id="closePopupBtn">&times;</button>
+        <div class="modal-header">
+            <h3>Secure Your Strategic Gap Audit</h3>
+            <p>Direct advisory for factory owners & industrial leaders looking to eliminate operational chaos.</p>
+        </div>
+        <form id="popupForm" action="https://formspree.io/f/mlgpkkjj" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" required placeholder="Full Name" class="input-light">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" required placeholder="Professional Email" class="input-light">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="whatsap p" required placeholder="WhatsApp Number (With Country Code)"
+                    class="input-light">
+            </div>
+
+            <div class="form-group">
+                <select name="role" required class="input-light">
+                    <option value="" disabled selected>Current Professional Role</option>
+                    <option value="Factory Owner">Factory Owner / CEO</option>
+                    <option value="Manager">Operations / Plant Manager</option>
+                    <option value="Student">Ambitious Student / Future Leader</option>
+                    <option value="Other">External Consultant / Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select name="need" required class="input-light">
+                    <option value="" disabled selected>Primary Strategic Need</option>
+                    <option value="Growth Strategy">Systematic Growth Strategy</option>
+                    <option value="Production Flow (OFM)">Production Flow Optimization (OFM)</option>
+                    <option value="System Setup (OTM)">OTM Architecture Implementation</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mt-3">Request Immediate Consultation <i
+                    class="fa-solid fa-paper-plane"></i></button>
+            <p id="popupSuccessMessage" class="success-message"
+                style="display: none; color: #28a745; margin-top: 10px; font-weight: 600; text-align:center;">Strategic
+                insight requested. Check your WhatsApp shortly.</p>
+    </div>
+    </form>
+</div>

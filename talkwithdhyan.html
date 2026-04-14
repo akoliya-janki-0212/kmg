@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk with Dhyan | KMG Industries</title>
+    <meta name="description"
+        content="Industrial masterclasses and sessions with Er. Dhyan Shah. Join the next session for strategic growth.">
+    <link rel="canonical" href="https://kmgindustries.in/talkwithdhyan.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <div id="header-root"></div>
+
+    <!-- Hero Header -->
+    <section class="talk-hero">
+        <div class="container">
+            <div class="badge animate-up">Masterclass Series</div>
+            <h1 class="animate-up" style="color: white; margin-top: 1rem;">Talk with Dhyan</h1>
+            <p class="animate-up" style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">
+                Direct insights from the Managing Director on factory scaling,
+                automation, and operational excellence.
+            </p>
+        </div>
+    </section>
+
+    <!-- Part 1: Next Event (Featured) -->
+    <section class="container section">
+        <div id="featured-event-container">
+            <div class="text-center p-5">
+                <i class="fa-solid fa-circle-notch fa-spin fa-2x"></i>
+                <p class="mt-2">Fetching next session...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 2: Incoming Sessions (Images & Names) -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Incoming Sessions</h2>
+            </div>
+
+            <div class="swiper incoming-swiper mt-4 pb-5">
+                <div id="incoming-sessions-list" class="swiper-wrapper">
+                    <!-- Dynamic Content: Swiper Slides -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part 3: Old Event Videos -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Session Archive & Business Tips</h2>
+                <p class="section-description mx-auto">Full masterclass recordings and quick business growth strategies in one place.</p>
+            </div>
+
+            <div id="past-videos-gallery" class="video-grid">
+                <!-- Dynamic Content: All Videos -->
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-root"></div>
+    <div id="popup-root"></div> <!-- Keep the popup logic -->
+
+    <script src="components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="talkwithdhyan.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

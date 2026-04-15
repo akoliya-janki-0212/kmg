@@ -38,7 +38,7 @@ window.KMG_COMPONENTS = {
             <p class="mt-1 text-light-dim">Moving your factory from daily messes to a business that grows on its own.
             </p>
             <div class="contact-details mt-3 text-light-dim" style="font-size: 0.9rem;">
-                <p class="mb-1 text-light-dim"><i class="fa-solid fa-location-dot me-2"></i> 210, Arved Transcube Mall, Bandhu Nagar, Vijay Nagar, Ranip, Ahmedabad, Gujarat 382480</p>
+                <p class="mb-1 text-light-dim"><i class="fa-solid fa-location-dot me-2"></i> 1202 Western EDGE II (Commercial), Off W.E.Highway, Borivali (East), Mumbai, Maharashtra, 400066</p>
                 <p class="mb-1 text-light-dim"><i class="fa-solid fa-phone me-2"></i> +91 91041 83331</p>
                 <p class="mb-1 text-light-dim"><i class="fa-solid fa-envelope me-2"></i> kmgmachineries@gmail.com</p>
             </div>

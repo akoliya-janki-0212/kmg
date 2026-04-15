@@ -19,8 +19,8 @@ window.KMG_COMPONENTS = {
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Journey</a></li>
                 <li><a href="machineries.html">Machineries</a></li>
-                <li><a href="projects.html" style="display: none;">Project</a></li>
-                <li><a href="contract-packaging.html">Contract packaging</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="contract-packaging.html" style="display: none;">Contract packaging</a></li>
                 <li><a href="spares.html">120 Min Spares</a></li>
                 <li><a href="talkwithdhyan.html" style="display: none;">Talk with Dhyan</a></li>
                 <li><a href="careers.html">Careers</a></li>
@@ -61,9 +61,9 @@ window.KMG_COMPONENTS = {
         <div class="footer-links">
             <h4>Services</h4>
             <ul>
-                <li><a href="projects.html" style="display: none;">Turnkey Project</a></li>
+                <li><a href="projects.html">Turnkey Project</a></li>
                 <li><a href="machineries.html">Machineries</a></li>
-                <li><a href="contract-packaging.html">Contract Packaging</a></li>
+                <li><a href="contract-packaging.html" style="display: none;">Contract Packaging</a></li>
             </ul>
         </div>
     </div>
@@ -126,7 +126,7 @@ window.KMG_COMPONENTS = {
         </div>
         <div class="chat-body">
             <p class="chat-greeting" style="font-weight: 500; color: #444; margin-bottom: 12px;">Welcome! Pls enter your details and start chat.</p>
-            <form id="chatForm" action="https://formspree.io/f/mlgpkkjj" method="POST">
+            <form id="chatForm" action="https://formspree.io/f/xeevejpq" method="POST">
                 <div class="chat-form-row">
                     <input type="text" name="name" placeholder="Name*" required>
                     <input type="email" name="email" placeholder="E-mail*" required>

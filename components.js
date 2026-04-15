@@ -40,7 +40,7 @@ window.KMG_COMPONENTS = {
             <div class="contact-details mt-3 text-light-dim" style="font-size: 0.9rem;">
                 <p class="mb-1 text-light-dim"><i class="fa-solid fa-location-dot me-2"></i> 210, Arved Transcube Mall, Bandhu Nagar, Vijay Nagar, Ranip, Ahmedabad, Gujarat 382480</p>
                 <p class="mb-1 text-light-dim"><i class="fa-solid fa-phone me-2"></i> +91 91041 83331</p>
-                <p class="mb-1 text-light-dim"><i class="fa-solid fa-envelope me-2"></i> info.kmgindustries@gmail.com</p>
+                <p class="mb-1 text-light-dim"><i class="fa-solid fa-envelope me-2"></i> kmgmachineries@gmail.com</p>
             </div>
             <div class="social-icons mt-3">
                 <a href="https://www.facebook.com/profile.php?id=61558509921435#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>

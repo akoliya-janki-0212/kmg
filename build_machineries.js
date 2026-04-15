@@ -325,7 +325,7 @@ async function buildMachineries() {
         const pid = machine.product_id || machine.id;
         const slug = slugify(name);
         const fileName = `${slug}_${pid}.html`;
-        const description = (machine.description || "KMG Industries industrial machinery.").replace(/"/g, '&quot;');
+        const description = (machine.description || "KMG Machineries industrial machinery.").replace(/"/g, '&quot;');
 
         // Image Sync
         const localImages = [];
@@ -449,7 +449,7 @@ async function buildSpares() {
         const pid = spare.product_id || spare.id;
         const slug = slugify(name);
         const fileName = `${slug}_${pid}.html`;
-        const description = (spare.description || spare.Description || "Industrial material by KMG Industries.").replace(/"/g, '&quot;');
+        const description = (spare.description || spare.Description || "Industrial material by KMG Machineries.").replace(/"/g, '&quot;');
 
         // Image Sync
         const localImages = [];

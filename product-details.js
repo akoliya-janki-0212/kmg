@@ -287,7 +287,7 @@ async function renderProductDetails(product) {
     });
 
     if (breadcrumbName) breadcrumbName.textContent = name;
-    document.title = `${name} | KMG Industries`;
+    document.title = `${name} | KMG Machineries`;
 
     container.innerHTML = `
         <div class="details-grid-condensed">
@@ -534,7 +534,7 @@ window.toggleAccordion = function (btn) {
 }
 
 function orderOnWhatsApp(id, name) {
-    const message = encodeURIComponent(`Hi KMG Industries, I am interested in ordering: \n\nProduct: ${name}\nID: ${id}\n\nPlease provide more details.`);
+    const message = encodeURIComponent(`Hi KMG Machineries, I am interested in ordering: \n\nProduct: ${name}\nID: ${id}\n\nPlease provide more details.`);
     window.open(`https://wa.me/919104183331?text=${message}`, '_blank');
 }
 

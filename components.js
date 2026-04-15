@@ -6,7 +6,7 @@ window.KMG_COMPONENTS = {
     <div class="container nav-container">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/logo.jpg" alt="KMG Industries Logo" style="height: 70px; width: auto; display: block;">
+                <img src="assets/logo.jpg" alt="KMG Machineries Logo" style="height: 70px; width: auto; display: block;">
             </a>
         </div>
 
@@ -68,7 +68,7 @@ window.KMG_COMPONENTS = {
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2026 KMG Industries. Engineered for Industrial Excellence.</p>
+        <p>&copy; 2026 KMG Machineries. Engineered for Industrial Excellence.</p>
     </div>
 </footer>
 

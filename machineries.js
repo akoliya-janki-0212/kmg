@@ -238,7 +238,7 @@ window.switchSubCategory = async function (subCategoryId) {
  * WhatsApp Quote Helper
  */
 function orderOnWhatsApp(id, name) {
-    const message = encodeURIComponent(`Hi KMG Industries, I am interested in a quote for:\n\nMachine: ${name}\nID: ${id}\n\nPlease provide more details.`);
+    const message = encodeURIComponent(`Hi KMG Machineries, I am interested in a quote for:\n\nMachine: ${name}\nID: ${id}\n\nPlease provide more details.`);
     window.open(`https://wa.me/${MACHINE_CONFIG.whatsappNumber}?text=${message}`, '_blank');
 }
 window.orderOnWhatsApp = orderOnWhatsApp;
